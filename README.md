@@ -7,10 +7,10 @@ Not CFX Namespace
 
 ***Functions***
 
-
+```
 rage.joaat(string name)
 > return hash
-
+```
 
 **players**
 ```
