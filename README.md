@@ -1,10 +1,10 @@
 # Atlas-LUA
 ***Natives***
-
+```
 We support most of the natives here: https://docs.fivem.net/natives/
 
 Not CFX Namespace
-
+```
 
 ***Functions***
 
