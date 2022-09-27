@@ -5,14 +5,14 @@ We support most of the natives here: https://docs.fivem.net/natives/
 Not CFX Namespace
 
 
-***Functions***
+- ***Functions***
 
 ```
 rage.joaat(string name)
 > return hash
 ```
 
-**players**
+- **players**
 ```
 get_player_selected.player_id()
 
@@ -25,7 +25,7 @@ returns selected player from player list
 
 
 
-**scrips**
+- **scrips**
 ```
 util.find_script_thread(rage::joaat_t hash)
 > returns script thread
@@ -33,7 +33,7 @@ util.find_script_thread(rage::joaat_t hash)
 
 
 
-**netword manager**
+- **netword manager**
 ```
 util.get_network_player_mgr()
 
@@ -46,7 +46,7 @@ util.get_network_player_mgr.get_player_info(int id)
 
 
 
-**Globals**
+- **Globals**
 ```
 SCRIPT.SET_GLOBAL_INT(string index, int i)
 
@@ -59,7 +59,7 @@ SCRIPT.GET_GLOBAL_FLOAT(string index, float f)
 
 
 
-**Menu**
+- **Menu**
 ```
 g_running() 
 > Menu Running bool, if set to false menu unloads
@@ -92,7 +92,7 @@ GetTickCount64()
 ```
 
 
-**MISC**
+- **MISC**
 ```
 SET_SPAWN_BYPASS() 
 > Make sure you restore after object is spawned
