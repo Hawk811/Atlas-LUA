@@ -14,8 +14,11 @@ rage.joaat(string name)
 
 **players**
 get_player_selected.player_id()
+
 get_player_selected.net_game_player()
+
 get_player_selected.CPed()
+
 returns selected player from player list
 
 
