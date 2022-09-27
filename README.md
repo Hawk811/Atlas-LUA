@@ -63,7 +63,7 @@ SCRIPT.GET_GLOBAL_FLOAT(string index, float f)
 - **Menu**
 ```
 g_running() 
-> Menu Running bool, if set to false menu unloads
+> Menu Running bool
 
 Unload()
 
