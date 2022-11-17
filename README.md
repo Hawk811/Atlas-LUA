@@ -1,38 +1,46 @@
 # Atlas-LUA
-***Natives***
-```
-We support most of the natives here: https://docs.fivem.net/natives/
-
-Not CFX Namespace
-```
 
 ***Functions***
 
 ```
-rage.joaat(string name)
+joaat(string name)
 > return hash
 ```
 
-- **players**
+- **Menu**
 ```
-get_player_selected.player_id()
-
-get_player_selected.net_game_player()
-
-get_player_selected.CPed()
-
-returns selected player from player list
+menu.get_player_selected()
+menu.show_message(const char* title, const char* msg)
+menu.show_warning(const char* title, const char* msg)
+menu.show_error(const char* title, const char* msg)
+menu.get_selected_player()
+menu.is_open()
+menu.text(std::string text, float posx, float posy, float sizew, float sizeh, bool center)
+menu.rect(float posx, float posy, float sizew, float sizeh, int r, int g, int b, int a)
+menu.queue_job(function)
 ```
 
 
 
 - **scrips**
 ```
-util.find_script_thread(rage::joaat_t hash)
-> returns script thread
+script.trigger_script_event(args)
+script.yield()
+script.add_script(function)
+script.add_callback(function)
 ```
 
+- **System**
+```
+system.wait(time)
+```
 
+- **Logger**
+```
+logger.info(string)
+logger.debug(string)
+logger.warning(string)
+```
 
 - **netword manager**
 ```
@@ -62,34 +70,22 @@ SCRIPT.GET_GLOBAL_FLOAT(string index, float f)
 
 - **Menu**
 ```
-g_running() 
-> Menu Running bool
-
-Unload()
-
-exit()
-
-Notification(string title, string message)
-
-g_gui.rect(float posx, float posy, float sizew, float sizeh, int r, int g, int b, int a)
-
-g_gui.text(string text, float posx, float posy, float sizew, float sizeh, bool center)
-
-g_gui.is_open()
-
-Log.Info(string log)
-
-Log.Error(string log)
-
-script.yield();
-
-os.Sleep(time)
-
-GetAsyncKeyState(int key)
-
-GetTickCount()
-
-GetTickCount64()
+imgui.lua_imgui_submenu.new(const char* name)
+> Returns submenu in main menu UI
+> add_button(const char* name, function)
+> add_text(const char* text)
+> add_input_int(const char* name, int default_val)
+> add_input_text(const char* name, const char* default_val)
+> add_checkbox(const char* name, bool default_val)
+> add_separator()
+> add_sameline()
+> 
+> Example:
+> SelfMenu = imgui.lua_imgui_submenu.new("Self")
+> SelfMenu:add_button("Godmode", 
+> function()
+>     ENTITY.SET_ENTITY_INVINCIBLE(PLAYER.PLAYER_PED_ID(), true)
+> end)
 ```
 
 
