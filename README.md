@@ -4,7 +4,8 @@
 
 ```
 joaat(string name)
-> returns hash
+GetTickCount()
+GetTickCount64()
 ```
 
 - **Menu**
