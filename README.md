@@ -4,7 +4,7 @@
 
 ```
 joaat(string name)
-> return hash
+> returns hash
 ```
 
 - **Menu**
