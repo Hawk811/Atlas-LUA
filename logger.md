@@ -1,4 +1,4 @@
-# Table: log
+# Table: logger
 
 Table containing functions for printing to console / log file.
 
@@ -13,7 +13,7 @@ Logs an informational message.
 
 **Example Usage:**
 ```lua
-log.info(data)
+logger.info(data)
 ```
 
 ### `warning(data)`
@@ -25,7 +25,7 @@ Logs a warning message.
 
 **Example Usage:**
 ```lua
-log.warning(data)
+logger.warning(data)
 ```
 
 ### `debug(data)`
@@ -37,5 +37,5 @@ Logs a debug message.
 
 **Example Usage:**
 ```lua
-log.debug(data)
+logger.debug(data)
 ```
