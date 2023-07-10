@@ -75,3 +75,24 @@ end)
 script.run_in_fiber(func)
 ```
 
+### `yield()`
+
+Yield execution.
+
+**Exemple Usage:**
+```lua
+script_util:yield()
+```
+
+### `sleep(ms)`
+
+Sleep for the given amount of time, time is in milliseconds.
+
+- **Parameters:**
+  - `ms` (integer): The amount of time in milliseconds that we will sleep for.
+
+**Exemple Usage:**
+```lua
+script_util:sleep(ms)
+```
+
