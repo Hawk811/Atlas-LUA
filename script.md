@@ -81,7 +81,7 @@ Yield execution.
 
 **Exemple Usage:**
 ```lua
-script:yield()
+script.yield()
 ```
 
 ### `sleep(ms)`
@@ -93,6 +93,6 @@ Sleep for the given amount of time, time is in milliseconds.
 
 **Exemple Usage:**
 ```lua
-script:sleep(ms)
+script.sleep(ms)
 ```
 
