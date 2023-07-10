@@ -56,16 +56,3 @@ locals.set_int(script, index, val)
 locals.set_float(script, index, val)
 ```
 
-### `get_pointer(script, index)`
-
-- **Parameters:**
-  - `script` (string): The name of the script
-  - `index` (index): Index of the script local.
-
-- **Returns:**
-  - `pointer`: The pointer to the given local.
-
-**Example Usage:**
-```lua
-pointer = locals.get_pointer(script, index)
-```
