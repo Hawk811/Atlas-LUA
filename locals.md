@@ -1,4 +1,4 @@
-# Table: locals
+# locals
 
 Table for manipulating GTA scripts locals.
 
