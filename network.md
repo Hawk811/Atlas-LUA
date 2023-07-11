@@ -79,30 +79,6 @@ integer = network.get_selected_player()
 integer = network.get_selected_database_player_rockstar_id()
 ```
 
-### `flag_player_as_modder(player_idx)`
-
-Flags the given player as a modder in our local database.
-
-- **Parameters:**
-  - `player_idx` (integer): Index of the player.
-
-**Example Usage:**
-```lua
-network.flag_player_as_modder(player_idx)
-```
-
-### `is_player_flagged_as_modder(player_idx)`
-
-- **Parameters:**
-  - `player_idx` (integer): Index of the player.
-
-- **Returns:**
-  - `boolean`: Returns true if the given player is flagged as a modder.
-
-**Example Usage:**
-```lua
-boolean = network.is_player_flagged_as_modder(player_idx)
-```
 
 ### `force_script_host(script_name)`
 
