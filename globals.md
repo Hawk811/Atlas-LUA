@@ -19,21 +19,6 @@ Retrieves an int global value.
 integer = globals.get_int(global)
 ```
 
-### `get_uint(global)`
-
-Retrieves an uint global value.
-
-- **Parameters:**
-  - `global` (integer): index of the global
-
-- **Returns:**
-  - `integer`: value of the global
-
-**Example Usage:**
-```lua
-integer = globals.get_uint(global)
-```
-
 ### `get_float(global)`
 
 Retrieves a float global value.
@@ -75,19 +60,6 @@ Sets an int global value.
 **Example Usage:**
 ```lua
 globals.set_int(global, val)
-```
-
-### `set_uint(global, val)`
-
-Sets an uint global value.
-
-- **Parameters:**
-  - `global` (integer): index of the global
-  - `val` (integer): new value for the global
-
-**Example Usage:**
-```lua
-globals.set_uint(global, val)
 ```
 
 ### `set_float(global, val)`
