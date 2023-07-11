@@ -4,12 +4,12 @@ Table containing helper functions related to gta scripts.
 
 ## Functions (2)
 
-### `register_looped(name, func)`
+### `add_script(func)`
 
 Registers a function that will be looped as a gta script.
 **Example Usage:**
 ```lua
-script.register_looped("nameOfMyLoopedScript", function (script)
+script.add_script(function (script)
      -- sleep until next game frame
      script:yield()
 
@@ -32,20 +32,19 @@ end)
 ```
 
 - **Parameters:**
-  - `name` (string): name of your new looped script
   - `func` (function): function that will be executed in a forever loop.
 
 **Example Usage:**
 ```lua
-script.register_looped(name, func)
+script.add_script(func)
 ```
 
-### `run_in_fiber(func)`
+### `add_callback(func)`
 
 Executes a function once inside the fiber pool, you can call natives inside it and yield or sleep.
 **Example Usage:**
 ```lua
-script.run_in_fiber(function (script)
+script.add_callback(function (script)
      -- sleep until next game frame
      script:yield()
 
@@ -72,7 +71,7 @@ end)
 
 **Example Usage:**
 ```lua
-script.run_in_fiber(func)
+script.add_callback(func)
 ```
 
 ### `queue_job(func)`
