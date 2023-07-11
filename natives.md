@@ -1,5 +1,7 @@
 # Atlas-LUA
 
+```lua
+
 - **Natives**
 SYSTEM = {
 WAIT=function(ms)return n_invoker.invoke_void(0x4EDE34FBADD967A6,ms);
@@ -6629,3 +6631,4 @@ OVERRIDE_POPSCHEDULE_VEHICLE_MODEL=function(scheduleId,vehicleHash)return n_invo
 CLEAR_POPSCHEDULE_OVERRIDE_VEHICLE_MODEL=function(scheduleId)return n_invoker.invoke_void(0x5C0DE367AA0D911C,scheduleId);
 GET_HASH_OF_MAP_AREA_AT_COORDS=function(x,y,z)return n_invoker.invoke_int(0x7EE64D51E8498728,x,y,z);
 };
+```
