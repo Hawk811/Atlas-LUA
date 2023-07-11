@@ -1,8 +1,6 @@
-# Atlas-LUA
 
+# Natives
 ```lua
-
-- **Natives**
 SYSTEM = {
 WAIT=function(ms)return n_invoker.invoke_void(0x4EDE34FBADD967A6,ms);
 START_NEW_SCRIPT=function(scriptName,stackSize)return n_invoker.invoke_int(0xE81651AD79516E48,scriptName,stackSize);
